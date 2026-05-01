@@ -6,6 +6,10 @@ export const AuthContext = createContext();
 const AuthProvider = ({children})=>{
 
     const [userData, setUserData] = useState([]);
+
+    useEffect(() => {
+    setLocalStorage();
+    }, []);
     
     useEffect(() => {
     const data = JSON.parse(localStorage.getItem("employees")) || [];
