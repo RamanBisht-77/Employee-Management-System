@@ -56,7 +56,7 @@ const TaskList = ({ employeeData }) => {
   };
 
   return (
-    <div className="flex items-center overflow-x-auto gap-5 h-[55%] w-full mt-10 py-5">
+    <div className="flex flex-wrap mt-10 bg-[#1c1c1c] p-4 gap-10 max-[700px]:flex-col items-center">
 
       {/*Always render from fresh state */}
       {currentEmployee?.tasks.map((task) => {

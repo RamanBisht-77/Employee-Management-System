@@ -2,7 +2,7 @@
 const AcceptTask = ({task,updateTaskStatus}) =>{
     // console.log(task.id);
     return (
-     <div className="shrink-0 h-full w-[25%] p-5 bg-red-900 rounded-xl" >
+     <div className="shrink-0 h-full w-[25%] p-5 bg-red-900 rounded-xl max-[700px]:w-[100%]" >
                 <div className="flex justify-between">
                     <h3 className="bg-red-600 text-sm px-3 py-1 rounded-full">{task.category}</h3>
                     <h4 className="text-sm">{task.date}</h4>
